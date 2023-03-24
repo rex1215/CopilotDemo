@@ -1,4 +1,6 @@
-class Person{
+package com.example.rex.demo.entity;
+
+public class Person{
     String name;
     String age;
     String surname;
@@ -6,7 +8,7 @@ class Person{
     // constructor
     public Person(String name, String age, String surname){
         this.name = name;
-        this.sername = surname;
+        this.surname = surname;
         this.age = age;
     }
 

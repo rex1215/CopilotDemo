@@ -27,10 +27,6 @@
 </body>
 
 <script>
-    var lang = navigator.language || navigator.userLanguage;
-    if (lang.indexOf("en") == -1) {
-        window.location.href = "http://localhost:8080/ru";
-    }
     window.onload = function() {
         // send Ajax request to server
         var xhr = new XMLHttpRequest();
@@ -42,8 +38,6 @@
                 document.getElementById("para").innerHTML = response;
                 // Make a alert dialog to inform GuoHaiBin to remember this message
                 alert(response);
-
-                    
             }
         }
     }
